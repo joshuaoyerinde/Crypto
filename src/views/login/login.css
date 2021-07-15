@@ -291,7 +291,10 @@
     color: #57b846;
     padding-left: 28px;
   }
-  
+  .error{
+    font-family: 'Poppins-Medium';
+    /* font-size: ; */
+  }
   /*------------------------------------------------------------------
   [ Button ]*/
   .container-login100-form-btn {
@@ -303,7 +306,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 11px;
   }
   
   .login100-form-btn {
