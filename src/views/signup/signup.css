@@ -171,7 +171,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 165px 130px 33px 95px;
+    padding: 105px 130px 33px 95px;
   }
   
   /*------------------------------------------------------------------
@@ -334,7 +334,10 @@
   .login100-form-btn:hover {
     background: #333333;
   }
-  
+  .error{
+    font-family: 'Poppins-Medium';
+    /* font-size: ; */
+  }
   
   
   /*------------------------------------------------------------------

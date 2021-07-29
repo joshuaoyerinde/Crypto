@@ -1,12 +1,39 @@
 <template>
   <div>
-    <v-dialog>
-      <v-btn flat slot="activator" class="primary">Add</v-btn>
-      <v-card>
-        <v-card-title>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam impedit, similique repellat, accusantium, dolores maiores quos facere provident quod hic amet. Laborum eius quas distinctio neque nemo sunt necessitatibus eaque.
-        </v-card-title>
-      </v-card>
-    </v-dialog>
+    <Body/>
+    
+    <Footer></Footer>
   </div>
 </template>
+
+<script>
+import Body from '../components/body/Body.vue'
+import Footer from '../components/footer/Footer.vue'
+  export default {
+    data () {
+      return {
+        dialog: false,
+        userid: '',
+        num: ''
+      }
+    },
+    components:{
+      Body,
+      Footer
+    },
+    methods:{
+        
+    },
+    computed:{
+      // count(){
+        // return 
+      // }
+    },
+    created(){
+          let token = localStorage.access_token;
+          let auth = JSON.parse(atob(token.split('.')[1]));
+          console.log(auth);
+         
+    }
+  }
+</script>
